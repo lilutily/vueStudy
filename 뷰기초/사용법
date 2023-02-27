@@ -1,1 +1,31 @@
 커밋 테스트
+
+터미널을 연다
+npm install -g @vue/cli
+
+- 에디터 부가기능 설치
+vetur
+html css surport
+vue 3 snippets
+
+터미널에 vue create 프로젝트 명
+vue3로 설정(방향키로)
+
+프로젝트를 만들면 src 안에 App.vue가 있는데 그게 html이라고 생각하면 된다.(메인 페이지)
+
+App.vue -> index.html
+HTML로 컴파일 해줌
+
+
+실행할 때 미리 보고싶으면 npm run serve을 터미널에 입력하면된다.
+주의할 점은 경로가 맞아야 실행되니까 App.vue가 있는지 보고 할것
+
+nodejs 를 설치하면 npm을 쓸수 있음
+npm 이란? 각종 웹개발 라이브러리 설치 도우미다!
+-npm으로 @vue/cli를 설치함 -> vue 프로젝트를 빠르게 생성해주는 라이브러리
+
+node_modules : 프로젝트에 쓰는 라이브러리 집합소
+
+src : 소스코드 다 담는 곳
+public : html, 기타파일 보관
+package.json : 라이브러리 버전, 프로젝트 설정 기록
