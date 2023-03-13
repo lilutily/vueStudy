@@ -41,11 +41,10 @@
   <div v-for="(pro,i) in 3" :key="i">
     <h4>{{ products[i] }}</h4>
     <p>{{ price[i] }}</p>
+  <!-- <button @click="신고수++">허위매물신고</button> <span>신고수 : {{ 신고수 }}</span>   -->
+  <button @click="신고수[i]++">허위매물신고</button> <span>신고수 : {{ 신고수[i] }}</span>  
   </div>
 
-  <div v-for="(pro,i) in select" :key="i">
-    {{ select[i] }}
-  </div>
   
 </template>
 
@@ -66,22 +65,17 @@ export default {
       products : ['원룸1', '원룸2', '원룸3'],
       menu : ['Home', 'Products', 'About'],
       price : ['60만원','70만원','80만원'],
-      select : [
-      {
-        name : '원룸1',
-        price : '50만원'
-      },
-      {
-        name : '원룸2',
-        price : '60만원'
-      },
-      {
-        name : '원룸3',
-        price : '70만원'
-      }
-      ]
+      신고수 : [0, 0, 0],
+      
     }
   },
+
+  methods : {
+    increase()  {      
+      this.신고수++;
+    }
+  },
+
   components: {
     
   }
